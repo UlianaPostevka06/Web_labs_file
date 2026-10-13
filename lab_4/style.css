@@ -1,0 +1,195 @@
+/*  ЗАВДАННЯ 1: */
+
+* {
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* 3. Селектори тегів для абзаців та блочних елементів */
+p {
+    color: green;
+    text-align: center;
+}
+
+div {
+    text-align: justify;
+}
+
+/* 4. Селектор класу для зміни кольору тексту на червоний (для 1-го та 3-го абзаців) */
+.red-text {
+    color: red;
+}
+
+/* 5. Клас для заборони перенесення рядка в 1-му абзаці */
+.nowrap-text {
+    white-space: nowrap;
+}
+
+/* 6. Селектор ідентифікатора для 2-го абзацу (курсив та жирний) */
+#special-p2 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* 7. Клас для додавання тіні до тексту (для 2-го абзацу та 2-го div) */
+.text-shadow-class {
+    text-shadow: 5px -5px 3px rgba(255, 0, 0, 0.6);
+}
+
+/* 8. Клас для 1-го блочного елементу (div) */
+.div-first-style {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-indent: 50px;
+}
+
+/* 9. Клас для 2-го блочного елементу (div) */
+.div-second-style {
+    letter-spacing: 30px;
+    word-spacing: 50px;
+}
+
+/*  ЗАВДАННЯ 2: */
+
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    
+}
+.recipe_title{
+    color: red;
+    font-size: 30px;
+}
+
+#prod_head{
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+li{
+    text-align: left;
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+
+.pidcreslene{
+    text-decoration-line: underline;
+}
+
+.zacres{
+    text-decoration: line-through;
+}
+
+.mark{
+    background-color: yellow;
+}
+
+hr.green_line{
+    width: 80%;
+    height: 5px;
+    background-color: green;
+}
+
+.footer_note{
+    color: black;
+    font-style: italic;
+}
+
+/*  ЗАВДАННЯ 3: */
+a{
+    color: blueviolet;
+}
+
+.menu_link{
+    color: green;
+}
+
+.empti{
+    list-style-type: none;
+}
+.galocka{
+    list-style-image: url(/Web_labs_file/lab_4/photo/gal.png);
+    
+}
+
+.cvadrat{
+    list-style-type: square;
+    
+}
+
+.line_down{
+    text-decoration: none;
+}
+
+.inside_list{
+    list-style-position: inside;
+}
+
+.menu_linkk{
+    color: black;
+    text-decoration: none;
+}
+
+/*  ЗАВДАННЯ 4: */
+.text-background span {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+ 
+/* 2. Нащадки: тег + клас + тег -> div .text-background span (жовтий фон) */
+div .text-background span {
+    background-color: yellow;
+}
+ 
+/* 3. Нащадки: два теги -> span у span (сірий фон, перекреслення) */
+span span {
+    background-color: gray;
+    text-decoration: line-through;
+}
+ 
+/* 4. Нащадки: три теги -> ol span span (18px, верхній регістр) */
+ol span span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+ 
+/* 5. Дочірній елемент: section > p (тінь + відступ першого рядка) */
+section > p {
+    text-shadow: 3px 3px 5px #c00;
+    text-indent: 50px;
+}
+ 
+/* 6. Дочірній елемент: li > ul (зображення замість маркера) */
+li > ul {
+    list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M2 8l4 4 8-9' fill='none' stroke='%23336' stroke-width='2.5'/%3E%3C/svg%3E");
+}
+ 
+/* 7. Дочірній елемент: div > .text-background (інтервал між словами 50px) */
+div > .text-background {
+    word-spacing: 50px;
+}
+ 
+/* 8. Дочірній елемент: .text-bold > p (жирність) */
+.text-bold > p {
+    font-weight: bold;
+}
+ 
+/* 9. Дочірній елемент: .text-bold > section > p (міжрядковий інтервал 45px) */
+.text-bold > section > p {
+    line-height: 45px;
+}
+ 
+/* 10. Наступний сусідній елемент: img + p (коричневий фон) */
+img + p {
+    background-color: brown;
+}
+ 
+/* 11. Усі наступні сусіди: section ~ p (червоний текст) */
+section ~ p {
+    color: red;
+}

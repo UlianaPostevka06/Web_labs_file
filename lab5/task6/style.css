@@ -1,0 +1,88 @@
+body {
+    background-color: #1b2a41;
+    background-image: url('img/morning.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;/*зображення збільшується під час розширення сторінки*/
+    background-attachment: fixed;/*зображення залишається нерухомим під час прокручування сторінки*/
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+
+.tags div {
+    display: inline;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(210, 235, 220);
+    /*
+        width і height тут не діють, тому що display: inline робить
+        елемент рядковим: його розмір залежить лише від вмісту.
+    */
+}
+
+.spans span {
+    display: block;
+    width: 150px;
+    margin-bottom: 5px;
+    background-color: rgb(244, 197, 66);
+}
+
+.repeat {
+    display: inline-block;
+    width: 180px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid black;
+    background-image: url('img/pets.png');
+}
+
+.repeat-x { background-repeat: repeat-x; }
+.repeat-y { background-repeat: repeat-y; }
+.repeat-space { background-repeat: space; }
+.repeat-round { background-repeat: round; }
+
+/*
+    Різниця між space та round:
+    space - картинка повторюється стільки разів, скільки вміщається
+    без зміни розміру, а між картинками додається порожній простір;
+    round - картинка повторюється так, щоб у блоці помістилося ціле
+    число рисунків, при цьому самі рисунки масштабуються (розтягуються
+    або стискаються).
+*/
+
+.size {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid black;
+    background-image: url('img/sea.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.size-contain { background-size: contain; }
+.size-cover { background-size: cover; }
+
+.scroll {
+    display: inline-block;
+    width: 300px;
+    max-height: 150px;
+    margin: 10px;
+    overflow: auto;
+    background-image: url('img/pets.png');
+}
+
+.scroll-scroll { background-attachment: scroll; }/*фон не рухається бо не привязаний до текста*/
+.scroll-local { background-attachment: local; }/*фон  рухається бо  привязаний до текста*/
+
+

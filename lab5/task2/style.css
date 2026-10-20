@@ -1,0 +1,39 @@
+table {
+    width: 700px;
+    font-family: "Times New Roman", serif;
+    margin: auto;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* шапка: від найсвітлішого до найтемнішого */
+th {
+    color: white;
+}
+
+th:nth-child(1) { background-color: rgb(185, 239, 189); }
+th:nth-child(2) { background-color: rgb(134, 213, 145); }
+th:nth-child(3) { background-color: rgb(110, 224, 111); }
+th:nth-child(4) { background-color: rgb(70, 228, 91); }
+th:nth-child(5) { background-color: rgb(28, 199, 19); }
+
+/* смугасті рядки, нові рядки підхоплюються автоматично */
+tbody tr:nth-child(odd) td {
+    background-color: rgb(77, 255, 80);
+    color: rgb(28, 199, 19);
+}
+
+tbody tr:nth-child(even) td {
+    background-color: rgb(110, 224, 111);
+    color: rgb(28, 199, 19);
+}
+
+tbody tr td:first-child {
+    background-color: rgb(80, 190, 91);
+    color: white;
+}

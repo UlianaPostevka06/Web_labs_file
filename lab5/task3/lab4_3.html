@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Анкета студента</h1>
+
+        <fieldset>
+            <legend>Особисті дані</legend>
+
+            <label for="name">Прізвище та ім'я:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="age">Вік:</label>
+            <input type="number" id="age" name="age">
+
+            <label>Стать:</label>
+            <label><input type="radio" name="gender" value="f"> Жіноча</label>
+            <label><input type="radio" name="gender" value="m"> Чоловіча</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Навчання</legend>
+
+            <label for="course">Курс:</label>
+            <select id="course" name="course">
+                <option>1 курс</option>
+                <option>2 курс</option>
+                <option>3 курс</option>
+                <option>4 курс</option>
+            </select>
+
+            <label>Улюблений предмет:</label>
+            <label><input type="checkbox" name="subject" value="html"> HTML і CSS</label>
+            <label><input type="checkbox" name="subject" value="js"> C#</label>
+            <label><input type="checkbox" name="subject" value="db"> Мережі</label>
+
+            <label for="comment">Коментар:</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+        </fieldset>
+
+        <button type="submit">Надіслати</button>
+        <button type="reset">Очистити</button>
+    </form>
+</body>
+</html>

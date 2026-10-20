@@ -1,0 +1,58 @@
+#zavdane_1 div {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    border: 5px solid rgb(225, 118, 125);
+    margin: 20px;
+    background-color: rgb(139, 37, 54);
+}
+
+#zavdane_1 div:nth-of-type(1) {
+    box-sizing: content-box;
+    /* Загальна ширина: 300 + 2 * 20 + 2 * 5 = 350px */
+}
+
+#zavdane_1 div:nth-of-type(2) {
+    box-sizing: border-box;
+    /* Загальна ширина: 300px */
+}
+
+#zavdane_2 div {
+    width: 500px;
+    max-height: 80px;
+    border: 2px solid black;
+    margin-bottom: 60px;
+}
+
+#zavdane_2 div:nth-of-type(1) { overflow: visible; }/*нічого не помінялося але коли будемо зменшувати висоту то текст вийде за блок*/
+#zavdane_2 div:nth-of-type(2) { overflow: hidden; }/* приховує все за межами блока */
+#zavdane_2 div:nth-of-type(3) { overflow: scroll; }/* додає скрол бар горизонтальний і вертикальний завжди. Навіть якщо вони не потрібні */
+#zavdane_2 div:nth-of-type(4) { overflow: auto; }/* додає скрол бар горизонтальний і вертикальний тільки коли ТРЕБА!. Може бути 1 скрол бар або 2*/
+
+#zavdane_3 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#zavdane_3 li {
+    display: inline-block;
+}
+
+#zavdane_3 a {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(70, 130, 100);
+    color: white;
+}
+
+/*
+    Третій пункт меню ховаю через display: none.
+    Елемент повністю видаляється з потоку документа: місце під ним
+    не резервується, сторінка формується так, ніби його немає.
+    Інші способи (наприклад visibility: hidden або opacity: 0)
+    тільки роблять елемент невидимим, а місце під ним залишається порожнім.
+*/
+#zavdane_3 li:nth-of-type(3) {
+    display: none;
+}

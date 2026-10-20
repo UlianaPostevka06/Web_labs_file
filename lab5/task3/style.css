@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgb(238, 245, 240);
+}
+
+form {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(215, 238, 247);
+    border: 2px solid rgb(81, 95, 255);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(0, 59, 254);
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border: 1px solid rgb(150, 190, 170);
+}
+
+legend {
+    font-weight: 700;
+    color: rgb(0, 59, 254);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: rgb(50, 50, 50);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: rgb(250, 252, 250);
+    border: 1px solid rgb(150, 190, 170);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(92, 157, 255);
+    border: none;
+}

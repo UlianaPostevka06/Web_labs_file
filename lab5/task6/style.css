@@ -8,7 +8,6 @@ body {
 }
 
 .container {
-    box-sizing: border-box;
     max-width: 900px;
     min-width: 320px;
     margin: 0 auto;
@@ -47,8 +46,8 @@ body {
 
 .repeat-x { background-repeat: repeat-x; }
 .repeat-y { background-repeat: repeat-y; }
-.repeat-space { background-repeat: space; }
-.repeat-round { background-repeat: round; }
+.repeat-space { background-repeat: space; }/*повністю заповнить з падінгами*/
+.repeat-round { background-repeat: round; }/*повністю заповнить але розтягне фоточки*/
 
 /*
     Різниця між space та round:

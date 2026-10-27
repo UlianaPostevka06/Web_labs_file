@@ -33,7 +33,7 @@ div:nth-of-type(3) {
 /* градієнт поверх кольору */
 div:nth-of-type(4) {
     background-color: #33f1d1;
-    background-image: linear-gradient(to top, rgba(0, 174, 255, 0.4), transparent);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100% 50%;

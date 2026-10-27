@@ -18,12 +18,12 @@
 }
 
 #zavdane_2 div {
-    width: 500px;
+    width: 220px;
     max-height: 80px;
     border: 2px solid black;
     margin-bottom: 60px;
 }
-
+/*nth-of-type-рахує лише елементи того ж тегу*/
 #zavdane_2 div:nth-of-type(1) { overflow: visible; }/*нічого не помінялося але коли будемо зменшувати висоту то текст вийде за блок*/
 #zavdane_2 div:nth-of-type(2) { overflow: hidden; }/* приховує все за межами блока */
 #zavdane_2 div:nth-of-type(3) { overflow: scroll; }/* додає скрол бар горизонтальний і вертикальний завжди. Навіть якщо вони не потрібні */

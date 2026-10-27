@@ -1,5 +1,5 @@
 /*  ЗАВДАННЯ 1: */
-
+/*  *- абсолютно все */
 * {
     font-family: Arial;
     font-size: 20px;
@@ -108,8 +108,8 @@ a{
     color: green;
 }
 
-.empti{
-    list-style-type: none;
+ul li ul{
+    list-style: none;
 }
 .galocka{
     list-style-image: url(/Web_labs_file/lab_4/photo/gal.png);
@@ -117,7 +117,7 @@ a{
 }
 
 .cvadrat{
-    list-style-type: square;
+    list-style: square;
     
 }
 

@@ -6,7 +6,7 @@ table {
 
 th, td {
     border: 1px solid white;
-    padding: 2px;
+    padding: 20px;
     text-align: center;
     font-size: 20px;
 }
@@ -15,7 +15,7 @@ th, td {
 th {
     color: white;
 }
-
+/*:nth-child(n) рахує всі дочірні елементи, незалежно від тегу. */
 th:nth-child(1) { background-color: rgb(185, 239, 189); }
 th:nth-child(2) { background-color: rgb(134, 213, 145); }
 th:nth-child(3) { background-color: rgb(110, 224, 111); }
@@ -23,12 +23,12 @@ th:nth-child(4) { background-color: rgb(70, 228, 91); }
 th:nth-child(5) { background-color: rgb(28, 199, 19); }
 
 /* смугасті рядки, нові рядки підхоплюються автоматично */
-tbody tr:nth-child(odd) td {
+tbody tr:nth-child(odd) td {/* odd - не парні рядки */
     background-color: rgb(77, 255, 80);
     color: rgb(28, 199, 19);
 }
 
-tbody tr:nth-child(even) td {
+tbody tr:nth-child(even) td {/* even -  парні рядки */
     background-color: rgb(110, 224, 111);
     color: rgb(28, 199, 19);
 }

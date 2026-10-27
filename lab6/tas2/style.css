@@ -1,0 +1,76 @@
+.main {
+    position: relative;
+    width: 420px;
+    height: 260px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+.bl {
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid #222;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Зелені блоки (завжди видимі) */
+.block-1-1,
+.block-1-2 {
+    background-color: #00b050;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.block-1-1 {
+    left: 0;
+    top: 220px;
+    width: 130px;
+    height: 40px;
+}
+
+.block-1-2 {
+    left: 165px;
+    top: 205px;
+    width: 120px;
+    height: 40px;
+    z-index: 2; /* поверх блоку 2.1 */
+}
+
+/* Сині блоки (спочатку приховані, місце зберігається) */
+.block-2-1,
+.block-2-2 {
+    background-color: #548dd4;
+    padding-top: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.block-2-1 {
+    left: 150px;
+    top: 0;
+    width: 270px;
+    height: 260px;
+    z-index: 1;
+}
+
+.block-2-2 {
+    left: 0;
+    top: 0;
+    width: 130px;
+    height: 200px;
+}
+
+/* Наведення на 1.1 -> з'являється 2.1 */
+.block-1-1:hover + .block-2-1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Наведення на 1.2 -> з'являється 2.2 */
+.block-1-2:hover + .block-2-2 {
+    opacity: 1;
+    visibility: visible;
+}

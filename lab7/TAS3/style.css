@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: "Roboto", sans-serif;  
+}
+
+.up_title_div{
+    padding: 10px;
+
+}
+
+.big_box{
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #5c5c5c; 
+}
+
+.title_div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.title_div_pogota{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    
+}
+
+.verh_gradus{  
+    font-size: 90px !important;
+    margin-top: 70px;
+    font-weight: bold;
+}
+.title_dani{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.pogods_div{
+    display: flex;
+    flex-direction: column;
+}
+
+.pogods{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #000000; 
+}
+
+.hov_grad{
+    color: rgba(46, 46, 46, 0.494);
+    font-size: 10px;
+}
+
+.pogods_div{
+    margin-top: 10px;
+    font-size: 10px;
+    text-align: center;
+}
+.pogods_name{
+    font-size: 20px;
+    width: 30px;
+}
+
+.act_grad{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.Pollen{
+    font-size: 20px;
+}

@@ -44,7 +44,7 @@
     background-color: #548dd4;
     padding-top: 8px;
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden;/* приховує блок */
     transition: opacity 0.3s;
 }
 

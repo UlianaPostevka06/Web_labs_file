@@ -1,6 +1,8 @@
 body{ 
     margin: 0; 
     font-family: Arial, sans-serif; 
+    overflow: auto;
+
 }
 
 ul{ 
@@ -14,13 +16,26 @@ a {
     text-decoration: none; 
 }
 
+p{
+    height: 1000px;
+
+}
+
 /*  Горизонтальна  */
+.stice{
+    position: fixed;
+    position: sticky;
+    background-color: #004a80;
+    z-index: 1;
+}
+
 .page-h { 
     padding-top: 50px; 
+    
 }
 
 .hnav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -59,12 +74,7 @@ a {
     display: block; 
 }
 
-.sticky {
-    position: sticky;
-    top: 50px;
-    padding: 10px;
-    background-color: #ddd;
-}
+
 
 .content { 
     height: 1500px; 

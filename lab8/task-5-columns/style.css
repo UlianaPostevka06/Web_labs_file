@@ -1,0 +1,78 @@
+/* ===== Змінні ===== */
+:root {
+  --color-bg: #fff7f7;
+  --color-border: #f95858;
+  --color-block: #fff;
+  --gap: 12px;
+  --block-padding: 12px;
+  --max-width: 1100px;
+  --main-height: 240px;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+}
+
+.layout {
+  display: grid;
+  gap: var(--gap);
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding: var(--gap);
+}
+
+.layout > * {
+  padding: var(--block-padding);
+  border: 2px solid var(--color-border);
+  background-color: var(--color-block);
+}
+
+.layout h1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.layout__main {
+  min-height: var(--main-height);
+}
+
+/* ===== Спосіб 1: column grids + rows (розміщення по лініях) ===== */
+/* Mobile first: 1 колонка, блоки йдуть у порядку HTML */
+.layout {
+  grid-template-columns: 1fr;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto auto 1fr auto;
+  }
+
+  .layout__header { grid-column: 1 / -1; grid-row: 1; }
+  .layout__nav { grid-column: 1 / -1; grid-row: 2; }
+  .layout__sidebar { grid-column: 1; grid-row: 3; }
+  .layout__main { grid-column: 2; grid-row: 3; }
+  .layout__ads { grid-column: 1; grid-row: 4; }
+  .layout__footer { grid-column: 2; grid-row: 4; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  :root {
+    --main-height: 360px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+
+  .layout__header { grid-column: 1 / -1; grid-row: 1; }
+  .layout__sidebar { grid-column: 1; grid-row: 2 / 4; }
+  .layout__nav { grid-column: 2; grid-row: 2; }
+  .layout__main { grid-column: 2; grid-row: 3; }
+  .layout__ads { grid-column: 3; grid-row: 2 / 4; }
+  .layout__footer { grid-column: 1 / -1; grid-row: 4; }
+}
